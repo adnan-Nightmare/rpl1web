@@ -8,10 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        notif: "rgba(255,255,255, 0.8)",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 };
